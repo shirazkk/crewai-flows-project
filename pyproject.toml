@@ -1,0 +1,21 @@
+[project]
+name = "project-flows"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shiraz Ali", email = "shirazkk8@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.95.0",
+    "litellm>=1.61.2",
+]
+
+[project.scripts]
+project-flows = "project_flows:main"
+flows = "project_flows.main:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
